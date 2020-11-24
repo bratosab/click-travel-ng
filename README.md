@@ -10,7 +10,7 @@
 - Installer les dépendances npm et lancer le projet (Infos à la fin du readme)
 - Récupérer et afficher les destinations de rêve par les destinations de rêve de l'API, pour se faire :
   1. Créer un service `click-travel` et l'injecter dans app en précisant dans le décorateur `providedIn: 'root'`,
-  2. Créer une méthode pour récupérer les données de l'API `http://travel-api.clicksomeone.com/destinations` - [Swagger de l'API](http://travel-api.clicksomeone.com/explorer/#/DestinationController/DestinationController.find),
+  2. Créer une méthode pour récupérer les données de l'API `https://travel-api.clicksomeone.com/destinations` - [Swagger de l'API](https://travel-api.clicksomeone.com/explorer/#/DestinationController/DestinationController.find),
   3. Implémenter l'appel de cette méthode dans le composant `AppComponent` et filtrer par les destinations de rêves (`isDreamDestination: true`), de préférence avec du [**RxJS**](https://www.learnrxjs.io/learn-rxjs/operators/filtering/filter),
   4. Remplacer les boutons codés en dur de la home page par les destinations de rêves dynamiques.
 - **Comiter** votre code avec le commentaire `feat(home page)`
@@ -18,8 +18,8 @@
 # Partie 2 (30 minutes)
 
 - Au clic sur un des boutons, naviguer vers une page qui permet d'afficher la liste des billets d'avion pour se rendre à la destination de rêve sélectionnée
-- La liste des billets est récupérable sur `http://travel-api.clicksomeone.com/tickets` - [Swagger de l'API](http://travel-api.clicksomeone.com/explorer/#/TicketController/TicketController.find)
-  * Cette liste est filtrable en passant un paramètre `filter` en query param, précisant la propriété et la valeur du filtre, example : [Vols pour New York](GET "http://travel-api.clicksomeone.com/tickets?filter=%7B%0A%20%20%22where%22%3A%20%7B%20%22to%22%3A%20%22NYC%22%20%7D%0A%7D") :
+- La liste des billets est récupérable sur `https://travel-api.clicksomeone.com/tickets` - [Swagger de l'API](https://travel-api.clicksomeone.com/explorer/#/TicketController/TicketController.find)
+  * Cette liste est filtrable en passant un paramètre `filter` en query param, précisant la propriété et la valeur du filtre, example : [Vols pour New York](GET "https://travel-api.clicksomeone.com/tickets?filter=%7B%0A%20%20%22where%22%3A%20%7B%20%22to%22%3A%20%22NYC%22%20%7D%0A%7D") :
     * Valeur de `filter` :
      ```json 
      { "where": { "to": "NYC" } } 
@@ -57,7 +57,7 @@ Avec les champs suivant :
 
 - Code API : https://github.com/bratosab/click-travel-api ou [image Docker](https://hub.docker.com/r/bratosab/click-travel-api) => à récupérer en cas de force majeur si l'API est down
 
-- Swagger api : http://travel-api.clicksomeone.com/explorer/
+- Swagger api : https://travel-api.clicksomeone.com/explorer/
 
 # Infos :
 
