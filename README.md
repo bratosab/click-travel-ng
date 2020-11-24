@@ -65,7 +65,7 @@ Le back-end est disponible sur internet, mais vous pouvez l'hoster chez vous si 
 
 ## Vous avez jusqu'à midi, bon courage !
 
-# Informations supplémentaire liée au projet Angular
+# Informations supplémentaires : projet Angular
 
 _This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2._
 
