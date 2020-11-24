@@ -63,7 +63,7 @@ Avec les champs suivant :
 
 Le back-end est disponible sur internet, mais vous pouvez l'hoster chez vous si vous le souhaiter.
 
-## Vous avez jusque midi bon courage
+## Vous avez jusqu'à midi, bon courage !
 
 # Informations supplémentaire liée au projet Angular
 
