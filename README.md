@@ -10,10 +10,10 @@
 - Installer les dépendances npm et lancer le projet (Infos à la fin du readme)
 - Récupérer et afficher les destinations de rêve par les destinations de rêve de l'API, pour se faire :
   1. Créer un service `click-travel` et l'injecter dans app en précisant dans le décorateur `providedIn: 'root'`,
-  2. Créer une méthode pour récuperer les données de l'API `http://travel-api.clicksomeone.com/destinations` - [Swagger de l'API](http://travel-api.clicksomeone.com/explorer/#/DestinationController/DestinationController.find),
-  3. Implémenter l'appel de cette méhode dans le composant AppComponent et filtrer par les destinations de rêves (`isDreamDestination: true`), de préference avec du [**RxJS**](https://www.learnrxjs.io/learn-rxjs/operators/filtering/filter),
+  2. Créer une méthode pour récupérer les données de l'API `http://travel-api.clicksomeone.com/destinations` - [Swagger de l'API](http://travel-api.clicksomeone.com/explorer/#/DestinationController/DestinationController.find),
+  3. Implémenter l'appel de cette méthode dans le composant `AppComponent` et filtrer par les destinations de rêves (`isDreamDestination: true`), de préférence avec du [**RxJS**](https://www.learnrxjs.io/learn-rxjs/operators/filtering/filter),
   4. Remplacer les boutons codés en dur de la home page par les destinations de rêves dynamiques.
-- **Commiter** votre code avec le commentaire `feat(home page)`
+- **Comiter** votre code avec le commentaire `feat(home page)`
 
 # Partie 2 (30 minutes)
 
@@ -25,7 +25,7 @@
      { "where": { "to": "NYC" } } 
      ```
 
-- **Commiter** votre code avec le commentaire feat(TicketList)
+- **Comiter** votre code avec le commentaire `feat(ticket list)`
 
 # Partie 3 (1h30)
 
@@ -35,16 +35,16 @@
 
 Avec les champs suivant :
 
-- le nom du passager
+- Le nom du passager
 - Le nom du vol
-- ville de départ
-- ville d'arrivée
-- la classe
+- La ville de départ
+- La ville d'arrivée
+- La classe du billet
 - La porte d'embarquement
 - Le siège
-- le numéro du billet
+- Le numéro du billet
 
-**Comiter** votre code FEAT(DisplayTicket)
+**Comiter** votre code `feat(display ticket)`
 
 # Partie 4 (1 minute)
 
