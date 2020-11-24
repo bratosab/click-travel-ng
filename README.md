@@ -1,10 +1,81 @@
-# ClickTravelNg
+# Click Travel
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
+**Sujet** : Récupérer un billet d'avion pour aller à la destination de vos rêves
+
+![screenshot](./src/assets/screenshot.png)
+
+# Partie 1 (1h)
+
+- Forker le repository Github du front end : https://github.com/bratosab/click-travel-ng
+- Installer les dépendances npm et lancer le projet (Infos à la fin du readme)
+- Récupérer et afficher les destinations de rêve par les destinations de rêve de l'API, pour se faire :
+  1. Créer un service `click-travel` et l'injecter dans app en précisant dans le décorateur `providedIn: 'root'`,
+  2. Créer une méthode pour récuperer les données de l'API `http://travel-api.clicksomeone.com/destinations` - [Swagger de l'API](http://travel-api.clicksomeone.com/explorer/#/DestinationController/DestinationController.find),
+  3. Implémenter l'appel de cette méhode dans le composant AppComponent et filtrer par les destinations de rêves (`isDreamDestination: true`), de préference avec du [**RxJS**](https://www.learnrxjs.io/learn-rxjs/operators/filtering/filter),
+  4. Remplacer les boutons codés en dur de la home page par les destinations de rêves dynamiques.
+- **Commiter** votre code avec le commentaire `feat(home page)`
+
+# Partie 2 (30 minutes)
+
+- Au clic sur un des boutons, naviguer vers une page qui permet d'afficher la liste des billets d'avion pour se rendre à la destination de rêve sélectionnée
+- La liste des billets est récupérable sur `http://travel-api.clicksomeone.com/tickets` - [Swagger de l'API](http://travel-api.clicksomeone.com/explorer/#/TicketController/TicketController.find)
+  * Cette liste est filtrable en passant un paramètre `filter` en query param, précisant la propriété et la valeur du filtre, example : [Vols pour New York](GET "http://travel-api.clicksomeone.com/tickets?filter=%7B%0A%20%20%22where%22%3A%20%7B%20%22to%22%3A%20%22NYC%22%20%7D%0A%7D") :
+    * Valeur de `filter` :
+     ```json 
+     { "where": { "to": "NYC" } } 
+     ```
+
+- **Commiter** votre code avec le commentaire feat(TicketList)
+
+# Partie 3 (1h30)
+
+- Au clic sur un billet de la liste, affichage du billet avec le même design que le billet suivant :
+
+![ticket](./src/assets/ticket-example.jpg)
+
+Avec les champs suivant :
+
+- le nom du passager
+- Le nom du vol
+- ville de départ
+- ville d'arrivée
+- la classe
+- La porte d'embarquement
+- Le siège
+- le numéro du billet
+
+**Comiter** votre code FEAT(DisplayTicket)
+
+# Partie 4 (1 minute)
+
+- **Pusher** votre code sur Github
+- Envoyer le lien du repo à @Abdallah et @Gaultier
+
+# Les liens
+
+- Code Front : https://github.com/bratosab/click-travel-ng
+
+- Code API : https://github.com/bratosab/click-travel-api ou [image Docker](https://hub.docker.com/r/bratosab/click-travel-api) => à récupérer en cas de force majeur si l'API est down
+
+- Swagger api : http://travel-api.clicksomeone.com/explorer/
+
+# Infos :
+
+Le back-end est disponible sur internet, mais vous pouvez l'hoster chez vous si vous le souhaiter.
+
+## Vous avez jusque midi bon courage
+
+# Informations supplémentaire liée au projet Angular
+
+_This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2._
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Make sure your npm dependencies are installed and up to date with `npm install`
+
+Run `npm run start` for a dev server.
+
+Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
